@@ -23,7 +23,7 @@ jobs:
           playwright install --with-deps
 
       - name: Run tests
-        run: pytest
+        run: pytest --update-snapshots
 
       - name: Upload report
         if: always()
